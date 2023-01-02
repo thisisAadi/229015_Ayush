@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter you Name: </label>
+        <input type="text" placeholder="NAME" id="nm"><br>
+        <label>Enter email: </label>
+        <input type="email" id="em"><br>
+        <label>Enter your date of birth: </label>
+        <input type="date" id="dt"><br>
+        <label>Choose one of the products:</label>
+        <select id="df">
+            <option>select</option>
+            <option>product1</option>
+            <option>product2</option>
+            <option>product3</option>
+            <option>product4</option>
+        </select>
+        <button type="submit" onclick="display()">Submit</button>
+    </form>
+    <br>
+
+    <div style="height: 400px;width: 300px; background-color: beige;" id="jk">
+         
+    </div>
+    <script>
+        var name=document.getElementById('nm').value;
+        var email=document.getElementById('em').value;
+        var date=document.getElementById('dt').value;
+        const display=()=>{
+            document.getElementById('jk').innerHTML=name;
+            document.getElementById('jk').innerHTML+=email;
+            document.getElementById('jk').innerHTML+=date;
+        }
+    </script>
+</body>
+</html>
